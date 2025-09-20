@@ -4,7 +4,7 @@ An E-commerce microservices platform is a collection of independently deployable
 
 🛠 Core Services
 
-Product Catalog Service
+# Product Catalog Service
 
 Stores products, categories, brands.
 
@@ -12,7 +12,7 @@ Supports search, filters, pagination.
 
 Can be scaled with Elasticsearch for full-text search.
 
-Cart Service
+# Cart Service
 
 Handles user carts (add/remove items, update quantity).
 
@@ -20,7 +20,7 @@ Stores cart state in Redis (fast access, session-like).
 
 Should support both guest and registered users.
 
-Order Service
+# Order Service
 
 Places and manages orders.
 
@@ -28,7 +28,7 @@ Handles order lifecycle (Created → Paid → Shipped → Delivered).
 
 Works closely with Payment & Inventory services.
 
-Payment Service
+# Payment Service
 
 Processes payments (Stripe, PayPal, Razorpay, etc.).
 
@@ -36,7 +36,7 @@ Manages refunds, failed transactions, and retries.
 
 Can later integrate multiple gateways with a strategy pattern.
 
-Inventory Service
+# Inventory Service
 
 Manages stock levels.
 
@@ -44,13 +44,14 @@ Updates stock when orders are placed.
 
 Prevents overselling (atomic locks or distributed transactions).
 
-Notification Service
+# Notification Service
 
 Sends order confirmations, shipping updates, promotions.
 
 Supports Email (SMTP, SendGrid), SMS, Push notifications.
 
-⚡ Scalability Angles
+
+# ⚡ Scalability Angles
 
 Recommendation Engine (AI/ML)
 
